@@ -9,7 +9,7 @@ def find_min_in_nested_arrays(src)
   # iterate over each sub array
   while count < src.length do
     # store each sub-array in a single array
-    each << src[count]
+    each = src[count]
     inner_count = 0
     while inner_count < src[count].length do
       each[inner_count]
