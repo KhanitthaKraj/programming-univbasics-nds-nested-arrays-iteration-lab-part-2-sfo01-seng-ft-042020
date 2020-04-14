@@ -17,9 +17,10 @@ def find_min_in_nested_arrays(src)
       each[inner_count]
       inner_count += 1
     end
-    # apend 
+    # extract smallest number from each array with .min method and append each one into a new array
     low_temp << each.min
     count += 1
   end
+  # return a new array that contains smallest values
   low_temp
 end
