@@ -11,9 +11,9 @@ def find_min_in_nested_arrays(src)
     inner_count = 0
     while inner_count < src[count].length do
       each[inner_count]
+      low_temp << each.min
       inner_count += 1
     end
-    low_temp << each.min
     
     count += 1
   end
