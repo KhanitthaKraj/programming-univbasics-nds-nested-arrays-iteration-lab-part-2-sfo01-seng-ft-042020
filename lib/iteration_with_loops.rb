@@ -10,15 +10,14 @@ def find_min_in_nested_arrays(src)
   while count < src.length do
     # store each sub-array in another single array
     each = src[count]
-    
     inner_count = 0
-    
     # iterate over each element inside of each sub-array
     while inner_count < src[count].length do
       # using the copied array
       each[inner_count]
       inner_count += 1
     end
+    # apend 
     low_temp << each.min
     count += 1
   end
