@@ -9,7 +9,7 @@ def find_min_in_nested_arrays(src)
   while count < src.length do
     inner_count = 0
     while inner_count < src[count].length do
-      each << src[count][inner_count]
+      each = src[count][inner_count].dup
       inner_count += 1
     end
     low_temp << each.min
